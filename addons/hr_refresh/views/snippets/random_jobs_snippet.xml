@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="random_jobs_snippet" name="Random Jobs">
+        <section class="s_random_jobs pt32 pb32">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center mb32">
+                        <h2>Latest Job Opportunities</h2>
+                        <p class="lead">Discover exciting career opportunities with us</p>
+                    </div>
+                </div>
+                <div class="row" id="random_jobs_container">
+                    <!-- Jobs will be loaded dynamically via JavaScript -->
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- Add to snippets menu -->
+    <template id="random_jobs_snippet_options" inherit_id="website.snippets" name="Random Jobs Snippet">
+        <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
+            <t t-snippet="hr_refresh.random_jobs_snippet"
+               t-thumbnail="/hr_refresh/static/src/img/snippets/random_jobs.png"/>
+        </xpath>
+    </template>
+
+    <!-- Assets -->
+    <template id="random_jobs_assets" inherit_id="website.assets_frontend" name="Random Jobs Assets">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/hr_refresh/static/src/js/random_jobs.js"></script>
+        </xpath>
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/css" href="/hr_refresh/static/src/css/random_jobs.css"/>
+        </xpath>
+    </template>
+</odoo>

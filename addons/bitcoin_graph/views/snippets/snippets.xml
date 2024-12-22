@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="bitcoin_snippets" inherit_id="website.snippets" name="Bitcoin Snippets">
+        <xpath expr="//*[@id='default_snippets']" position="before">
+            <t t-snippet="bitcoin_tracker.bitcoin_chart_snippet"
+               t-thumbnail="/bitcoin_tracker/static/src/img/blocks/bitcoin_chart.png"/>
+        </xpath>
+    </template>
+</odoo>

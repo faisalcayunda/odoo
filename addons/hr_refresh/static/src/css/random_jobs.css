@@ -1,0 +1,46 @@
+.s_random_jobs .job-card {
+    transition: transform 0.3s ease;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.s_random_jobs .job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.s_random_jobs .card-title {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.s_random_jobs .card-subtitle {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.s_random_jobs .job-location,
+.s_random_jobs .job-company {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.s_random_jobs .description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 1rem;
+}
+
+.s_random_jobs .card-footer {
+    background-color: transparent;
+    border-top: 1px solid #e0e0e0;
+    padding: 1rem;
+}
+
+.s_random_jobs .btn-primary {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}

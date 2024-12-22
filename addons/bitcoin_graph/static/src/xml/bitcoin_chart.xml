@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="bitcoin_tracker.BitcoinChart" owl="1">
+        <div class="bitcoin_chart_container s_bitcoin_chart" data-name="Bitcoin Chart">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="s_bitcoin_chart_title">
+                            <h2 class="text-center mb-4">Bitcoin Price Chart (USD)</h2>
+                        </div>
+                        <div class="bitcoin-chart-wrapper chart-md">
+                            <canvas id="bitcoinChart"/>
+                        </div>
+                        <div class="text-center mt-3 s_bitcoin_chart_info">
+                            <p class="current-price">Current Price: <span t-esc="state.price"/></p>
+                            <p class="last-updated">Last Updated: <span t-esc="state.lastUpdated"/></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>
